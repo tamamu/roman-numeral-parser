@@ -170,7 +170,7 @@ impl Parser {
 
 fn parse(src: &str) -> usize {
     let mut parser = Parser::new(src.to_string());
-    parser.lex().expect("lexing error");
+    parser.lex();
     let len = parser.toks.len();
     while parser.pos < len {
         parser.parse().expect("parsing error");
