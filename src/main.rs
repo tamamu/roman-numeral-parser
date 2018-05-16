@@ -10,6 +10,16 @@ struct Parser {
     toks: Vec<Token>
 }
 
+impl Parser {
+    fn new(src: String) -> Self {
+        Parser {
+            src: src,
+            pos: 0,
+            toks: Vec::new()
+        }
+    }
+}
+
 fn main() {
     println!("Hello, world!");
 }
