@@ -4,6 +4,12 @@ enum Token {
     Five(usize)
 }
 
+struct Parser {
+    src: String,
+    pos: usize,
+    toks: Vec<Token>
+}
+
 fn main() {
     println!("Hello, world!");
 }
