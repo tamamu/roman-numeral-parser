@@ -1,0 +1,6 @@
+[package]
+name = "rome_parser"
+version = "0.1.0"
+authors = ["Eddie <tamamu.1r1s@gmail.com>"]
+
+[dependencies]
